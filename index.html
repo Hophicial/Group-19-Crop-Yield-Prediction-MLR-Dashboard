@@ -144,7 +144,7 @@
                                 
                                 <div class="formula-container">
                                     <span class="formula-label">Fitted Equation</span>
-                                    <code class="formula-code">ŷ = 2543.5717 - 0.000155·x₁ + 0.000091·x₂</code>
+                                    <code class="formula-code">ŷ = 1075.8227 + 0.000202·x₁ + 0.000096·x₂</code>
                                 </div>
                             </div>
                         </div>
@@ -200,15 +200,15 @@
                     <!-- Top Level Stats Bar -->
                     <div class="summary-stats-bar">
                         <div class="summary-stat-box">
-                            <span class="stat-num">36.44%</span>
+                            <span class="stat-num">93.96%</span>
                             <span class="stat-desc">Goodness of Fit (R²)</span>
                         </div>
                         <div class="summary-stat-box">
-                            <span class="stat-num">33.01%</span>
+                            <span class="stat-num">93.63%</span>
                             <span class="stat-desc">Adjusted R²</span>
                         </div>
                         <div class="summary-stat-box">
-                            <span class="stat-num">141.55</span>
+                            <span class="stat-num">74.77</span>
                             <span class="stat-desc">Residual Standard Error (Kg/Ha)</span>
                         </div>
                     </div>
@@ -239,26 +239,26 @@
                                     <tbody>
                                         <tr>
                                             <td><strong>Intercept (β₀)</strong></td>
-                                            <td class="num-col mono">2543.5717</td>
-                                            <td class="num-col mono">478.6385</td>
-                                            <td class="num-col mono">5.3142</td>
-                                            <td class="num-col mono">5.3249e-06</td>
+                                            <td class="num-col mono">1075.8227</td>
+                                            <td class="num-col mono">84.3251</td>
+                                            <td class="num-col mono">12.7572</td>
+                                            <td class="num-col mono">1.70e-15</td>
                                             <td><span class="badge-tag tag-success">Highly Significant</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>Planted Area (β₁)</strong></td>
-                                            <td class="num-col mono">-0.000155</td>
-                                            <td class="num-col mono">0.000270</td>
-                                            <td class="num-col mono">-0.5737</td>
-                                            <td class="num-col mono">5.6967e-01</td>
+                                            <td class="num-col mono">0.000202</td>
+                                            <td class="num-col mono">0.0000562</td>
+                                            <td class="num-col mono">3.5956</td>
+                                            <td class="num-col mono">9.29e-04</td>
                                             <td><span class="badge-tag tag-warning" style="background: rgba(239, 68, 68, 0.15); color: #f87171;">Not Significant</span></td>
                                         </tr>
                                         <tr>
                                             <td><strong>Rice Production (β₂)</strong></td>
-                                            <td class="num-col mono">0.000091</td>
-                                            <td class="num-col mono">0.000066</td>
-                                            <td class="num-col mono">1.3693</td>
-                                            <td class="num-col mono">1.7915e-01</td>
+                                            <td class="num-col mono">0.000096</td>
+                                            <td class="num-col mono">0.0000229</td>
+                                            <td class="num-col mono">4.1878</td>
+                                            <td class="num-col mono">1.71e-04</td>
                                             <td><span class="badge-tag tag-warning" style="background: rgba(239, 68, 68, 0.15); color: #f87171;">Not Significant</span></td>
                                         </tr>
                                     </tbody>
@@ -287,23 +287,23 @@
                                     <tbody>
                                         <tr>
                                             <td><strong>Regression</strong></td>
-                                            <td class="num-col mono">459,553.89</td>
+                                            <td class="num-col mono">5,023,757.14</td>
                                             <td class="num-col mono">2</td>
-                                            <td class="num-col mono">229,776.95</td>
-                                            <td class="num-col mono">10.6084</td>
-                                            <td class="num-col mono text-success">2.2821e-04</td>
+                                            <td class="num-col mono">2,511,878.57</td>
+                                            <td class="num-col mono">287.75</td>
+                                            <td class="num-col mono text-success">2.82e-23</td>
                                         </tr>
                                         <tr>
                                             <td><strong>Residual</strong></td>
-                                            <td class="num-col mono">801,414.59</td>
+                                            <td class="num-col mono">323,093.38</td>
                                             <td class="num-col mono">37</td>
-                                            <td class="num-col mono">21,659.85</td>
+                                            <td class="num-col mono">8,732.25</td>
                                             <td class="num-col mono">-</td>
                                             <td class="num-col mono">-</td>
                                         </tr>
                                         <tr>
                                             <td><strong>Total</strong></td>
-                                            <td class="num-col mono">1,260,968.48</td>
+                                            <td class="num-col mono">5,346,850.52</td>
                                             <td class="num-col mono">39</td>
                                             <td class="num-col mono">-</td>
                                             <td class="num-col mono">-</td>
@@ -456,7 +456,7 @@
                                     <div style="color: var(--accent-emerald); font-size: 1.25rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-arrow-trend-up"></i></div>
                                     <h3 style="font-family: var(--font-heading); font-size: 1rem; margin-bottom: 0.5rem;">3. Coefficient Interpretation</h3>
                                     <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">
-                                        The negative coefficient for Planted Area (<strong>-0.000155</strong>) indicates a slight dilution effect, where expanding land without matching output reduces average yield density. The positive coefficient for Rice Production (<strong>+0.000091</strong>) shows that increased output on stable land drives agricultural efficiency.
+                                        The positive coefficient for Planted Area (<strong>+0.000202</strong>) indicates that expanding farmland contributes positively to yield in the Nigerian context. The positive coefficient for Rice Production (<strong>+0.000096</strong>) shows that increased output on existing land also drives agricultural efficiency.
                                     </p>
                                 </div>
                             </div>
@@ -525,7 +525,7 @@
                                         <i class="fa-solid fa-circle-check"></i>
                                         <h3>Linearity of Relationship — Met</h3>
                                     </div>
-                                    <p>Visually verified via scatter plots and regression trend lines. The target variable (Average Yield) exhibits moderate positive linear correlations with Rice Production (r = 0.5990) and Planted Area (r = 0.5764), confirming that a linear model structure is appropriate for the data.</p>
+                                    <p>Visually verified via scatter plots and regression trend lines. The target variable (Average Yield) exhibits strong positive linear correlations with Rice Production (r = 0.9678) and Planted Area (r = 0.9659), confirming that a linear model structure is appropriate for the data.</p>
                                 </div>
                                 
                                 <div class="assumption-block warning" style="border-left-color: var(--accent-amber); background: rgba(245, 158, 11, 0.03);">
@@ -533,7 +533,7 @@
                                         <i class="fa-solid fa-circle-exclamation" style="color: var(--accent-amber);"></i>
                                         <h3>Multicollinearity (VIF Check) — Documented Limitation</h3>
                                     </div>
-                                    <p>Checked using the Variance Inflation Factor (VIF). Due to the extremely high correlation between Planted Area and Rice Production in Nigeria (r = 0.9844), the centered VIF calculates to <strong>32.26</strong>, indicating high multicollinearity (standard threshold is &lt; 10.0). Note: The project spreadsheet lists VIF as <strong>1.15 (MET)</strong>, indicating that alternative regression subsets or omitted standardization parameters were used in that package. While high multicollinearity inflates individual parameter standard errors, the joint F-test (p = 0.0002) confirms the model's overall prediction remains statistically valid.</p>
+                                    <p>Checked using the Variance Inflation Factor (VIF). Due to the strong temporal trend shared by both variables over the 40-year period, the centered VIF calculates to <strong>50.86</strong> for both predictors, indicating high multicollinearity (standard threshold is &lt; 10.0). This is a known limitation of the dataset. While high multicollinearity inflates individual parameter standard errors, the joint F-test (p = 2.82e-23) confirms the model's overall prediction remains statistically valid.</p>
                                 </div>
                                 
                                 <div class="assumption-block pass">
@@ -549,7 +549,7 @@
                                         <i class="fa-solid fa-circle-exclamation"></i>
                                         <h3>Residual Normality — Minor Time-Series Departure</h3>
                                     </div>
-                                    <p>The Shapiro-Wilk normality test on the OLS residuals yields a statistic of W = 0.9219 (p-value = 0.0088 &lt; 0.05), pointing to a slight departure from a perfectly normal distribution. This is a common characteristic of time-series crop datasets. In accordance with the Central Limit Theorem (n = 40), the OLS estimators remain unbiased and mathematically valid.</p>
+                                    <p>The Shapiro-Wilk normality test on the OLS residuals yields a statistic of W = 0.9775 (p-value = 0.5967 &gt; 0.05), confirming that the residuals are normally distributed. This satisfies the normality assumption of Multiple Linear Regression.</p>
                                 </div>
 
                                 <div class="assumption-block pass" style="border-left-color: var(--accent-emerald); background: rgba(16, 185, 129, 0.03);">

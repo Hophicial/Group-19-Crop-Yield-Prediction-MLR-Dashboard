@@ -1,0 +1,2539 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.dosm.gov.my/portal-main/time-series -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" data-select2-id="select2-data-6-1jsb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Department of Statistics Malaysia</title>
+
+<link rel="icon" href="https://www.dosm.gov.my/uploads/favicon_20230614151933.png">
+
+<!-- safe -->
+<meta property="og:url" content="https://www.dosm.gov.my/portal-main/time-series">
+<meta property="og:type" content="Time Series Data">
+<meta property="og:title" content="Time Series Data">
+<meta property="og:description" content="List of Time Series Data provided by Department of Statistics Malaysia">
+<meta property="og:image" content="https://www.dosm.gov.my/assets/meta-img/time-series-data.png">
+
+<meta name="description" content="List of Time Series Data provided by Department of Statistics Malaysia">
+<meta name="keywords" content="time, series, data">
+<meta name="author" content="Department of Statistics Malaysia">
+
+<link rel="stylesheet" href="./Department of Statistics Malaysia_files/import.css">
+<link rel="stylesheet" href="./Department of Statistics Malaysia_files/import(1).css">
+<link rel="stylesheet" href="./Department of Statistics Malaysia_files/import(2).css">
+
+<link rel="stylesheet" type="text/css" href="./Department of Statistics Malaysia_files/plugins-css.css">
+<link rel="stylesheet" type="text/css" href="./Department of Statistics Malaysia_files/settings.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./Department of Statistics Malaysia_files/typography.css">
+<link rel="stylesheet" type="text/css" href="./Department of Statistics Malaysia_files/shortcodes.css">
+<link rel="stylesheet" type="text/css" href="./Department of Statistics Malaysia_files/style.css">
+<link rel="stylesheet" type="text/css" href="./Department of Statistics Malaysia_files/responsive.css">
+<link rel="stylesheet" href="./Department of Statistics Malaysia_files/layerslider.css">
+<link rel="stylesheet" href="./Department of Statistics Malaysia_files/select2.min.css">
+<link rel="stylesheet" href="./Department of Statistics Malaysia_files/bootstrap-duallistbox.css">
+
+<link href="./Department of Statistics Malaysia_files/sweetalert2.min.css" rel="stylesheet" type="text/css">
+<link href="./Department of Statistics Malaysia_files/bootstrap-tagsinput.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="./Department of Statistics Malaysia_files/animate.min.css">
+
+<script async="" src="./Department of Statistics Malaysia_files/get_counts"></script><script async="" src="./Department of Statistics Malaysia_files/64af3a0e1e26290019413e51.js.download"></script><script src="./Department of Statistics Malaysia_files/jquery-3.5.1.js.download"></script>
+
+<script src="./Department of Statistics Malaysia_files/highcharts.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/exporting.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/export-data.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/accessibility.js.download"></script>
+
+<script src="./Department of Statistics Malaysia_files/sweetalert2.min.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/bootstrap-tagsinput.min.js.download"></script>
+<script type="text/javascript" src="./Department of Statistics Malaysia_files/jquery.marquee.min.js.download"></script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!--script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-627b2034fc719399"></script-->
+
+<script type="text/javascript" src="./Department of Statistics Malaysia_files/sharethis.js.download" async="async"></script>
+    
+<style>html, body {
+  height: 100%;
+}
+
+body{
+    font-weight : 400;
+    font-size : 16px;
+    color : black;
+}
+
+.text-right #st-1{ text-align: right !important;}
+
+.pagination span{
+    border: 1px solid #aaa !important;
+    border-radius: 3px;
+    padding: 0.5em 1em;
+    margin: 0 5px;
+}
+
+
+.page-title.gray-bg ul.page-breadcrumb li{font-size:14px;}
+
+.lang-option{
+    color:black;
+    font-size:16px;
+    line-height:36px;
+}
+
+.lang_active{
+    font-weight : bold !important;
+    color : #1d8793;
+}
+
+#logo_img{height:80px !important;padding-bottom:1em !important;}
+
+.topbar{padding:15px 0 0 0 !important;}
+
+.button-outline {
+    background: white;
+    padding: 10px 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #02536A;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 3px;
+    text-align: center;
+    border: 2px solid #02536A;
+    cursor: pointer;
+    font-weight : 600;
+}
+
+p {color:inherit;line-height:1.5 !important}
+
+.sidebar-widget .widget-categories li a{
+    font-size : inherit;
+    color : inherit;
+}
+
+.sidebar-widget .widget-tags li a{
+     font-size : inherit;
+}
+
+.help-block{
+    color : red;
+    font-weight : 500;
+}
+
+.swal2-title{
+    font-size: 1.5em;
+}
+
+.boxes-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.nav-pills .nav-link{
+    background-color:#136f88;
+    margin-right:0.5em;
+    color:white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: orange !important;
+}
+
+section{
+    background-color: transparent;
+}
+
+#content-wrapper{
+    background-image:url(/assets/img/bg-gradient2.png) !important;
+    background-repeat:no-repeat !important;
+    background-size:100% auto !important;
+    background-position:top center !important;
+}
+
+.page-title.small{
+    padding:50px 0 0 0 !important;
+}
+
+.page-title.small .page-breadcrumb{
+    padding-bottom : 30px;
+    border-bottom: 1px dashed #eceff8
+}
+
+.page-title.gray-bg {
+    background-color: transparent;
+}
+
+.page-title h3{
+    font-size: 36px;
+    color : #136f88;
+}
+
+.btn{
+    font-size:14px;
+}
+
+.form-control{
+    font-size:14px;
+    color:black;
+    font-weight:300;
+}
+
+.select2-container .select2-selection--single, .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height : 40px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    right : 10px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height:40px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered, .select2-results__option{
+    padding-left:20px;
+}
+
+.page-title.small{
+    padding : 30px 0;
+}
+
+.page-title .page-title-name{
+    width : 100%;
+}
+
+.page-title .page-breadcrumb {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.page-title.gray-bg ul.page-breadcrumb li span, .page-title.gray-bg ul.page-breadcrumb li a, .page-title.gray-bg ul.page-breadcrumb li {
+    color: #136f88;
+}
+
+.page-title.small .page-breadcrumb {
+    padding-top: 10px; 
+}
+
+.text-white:hover{
+    color:white;
+}
+
+.owl-carousel .owl-nav .owl-next{
+    right: -30px;
+}
+
+.owl-carousel .owl-nav .owl-prev{
+    left: -30px;
+}
+
+.font-14{
+    font-size : 14px !important;
+}
+
+p{font-weight:inherit;}
+
+.owl-carousel .owl-nav i, .owl-carousel .owl-nav i:hover {
+    background:transparent;
+    border:none;
+    color:#aaa;
+    font-size : 50px;
+    width:auto;
+    height:auto;
+    padding:0em;
+}
+
+.main-title { 
+    width:100%; 
+    text-align:center; 
+    border-bottom: 1px solid #565656; 
+    line-height:0.1em; 
+    margin:10px 0 20px; 
+    font-weight : bold;
+    color:#565656;
+} 
+
+.main-title span { background:#fff; padding:0 20px; }
+
+.theme-color{color:#136f88;}
+
+.black-color{color: #333;}
+
+.btn-theme-blue{
+    background-color:#136f88;
+    border:0;
+    color : white;
+    padding: 0.8em 3em;
+    border-radius: 40px;
+    box-shadow: 0 1px 3px rgb(39 37 37 / 12%), 0 1px 2px rgb(39 37 37 / 24%);
+}
+
+.form-control-search {
+    display: block;
+    width: 100%;
+    padding: 0.4rem 0.75rem;
+   
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border:0;
+    border-radius: 0.25rem;
+    font-size : 14px;
+}
+
+.form-control-search-home{
+    display: block;
+    width: 100%;
+     padding: 0.8rem 1.5rem;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border:0;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    
+    -moz-box-shadow:    inset 0 0 15px #ced4da;
+    -webkit-box-shadow: inset 0 0 15px #ced4da;
+    box-shadow:         inset 0 0 15px #ced4da;
+    
+}
+
+.mega-menu .drop-down-multilevel .drop-down-multilevel { left: 100%; top: auto; bottom : auto;}
+
+#w0 .empty{padding-left: 15px;} 
+
+.button-selected{
+    background:orange;
+    border-color:orange;
+}
+
+.btn-custom, .btn-custom:hover{
+    border : 0;
+    padding : 0.7em 1em;
+    margin : 0;
+    color : white;
+    background-image: linear-gradient(to left,#2aa78d, #013f6d);
+    border-radius : 5px;
+    font-size : 13px;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.ol-custom li {margin-bottom:1em;}
+
+.blog-title-custom{height:85px;}
+
+.blog-image-custom{
+    height : 270px;
+    width : 100%;
+    background-color : whitesmoke;
+    background-size : cover;
+    background-repeat : no-repeat;
+    background-position : center center;
+}
+
+.recent-post-info a{font-size:14px;}
+
+.button-custom{
+    font-weight : normal !important;
+    text-transform : none !important;
+}
+
+.pagination{
+    width : 100%;
+}
+
+.blog-title-custom a {font-size:16px !important;}
+
+.section-title:nth-child(odd) .title-effect::before { background: none !important; }
+
+.mega-menu .drop-down-multilevel li:hover {
+    background: #ededed !important;
+}
+
+.mega-menu .drop-down-multilevel li:hover > a {
+    color: #008e63 !important;
+}
+
+.mega-menu .menu-links > li {
+    padding : 33px 0;
+}
+
+.mega-menu .menu-links > li.mainmenu:hover {
+    //background: #ededed !important;
+}
+
+.mega-menu .menu-links > li > a{
+    padding: 0 15px;
+}
+
+.mega-menu .menu-links > li > a:hover, .mega-menu .menu-links > li:hover > a {
+    color: #008e63 !important;
+}
+
+.w3ctext{
+    border:2px solid black;
+    display:inline-block;
+    color:black;
+    font-weight:bold;
+    font-size:16px;
+    margin-bottom : 1em;
+    cursor : pointer;
+    padding : 0 0.5em;
+}
+
+.footer a:hover, #footer2 a:hover, #header a:hover{color:white}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span, .pagination li a{
+    border : 1px solid #aaa;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control{
+    border: 1px solid #aaa;
+}
+
+.page-title h1 {
+    text-transform: none !important;
+}
+
+ul.page-breadcrumb li span{
+    text-transform: none !important;
+}
+
+.youtube-button{
+    width : 250px;
+    background-color : white;
+    color : #FF0000;
+    padding : 1em 2em;
+    border-radius:50px;
+    border:2px solid #FF0000;
+}
+
+.download-button{
+    width : 250px;
+    background-color : white;
+    color : #15818d;
+    padding : 1em 2em;
+    border-radius:50px;
+    border:2px solid #15818d;
+}
+</style>
+<style type="text/css">#st-1 {
+  font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;;
+  direction: ltr;
+  display: block;
+  opacity: 1;
+  text-align: center;
+  z-index: 94034;
+}
+#st-1.st-animated {
+  -moz-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -ms-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -o-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; -webkit-transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in; transition: o 0.2s ease-in, p 0.2s ease-in, a 0.2s ease-in, c 0.2s ease-in, i 0.2s ease-in, t 0.2s ease-in, y 0.2s ease-in;
+}
+#st-1.st-hidden {
+  opacity: 0;
+}
+
+#st-1.st-preview {
+  display: none!important;
+  opacity: 0!important;
+}
+#st-1.st-hide {
+  display: none;
+}
+#st-1 .st-btn {
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  -moz-transition: opacity 0.2s ease-in, top 0.2s ease-in; -ms-transition: opacity 0.2s ease-in, top 0.2s ease-in; -o-transition: opacity 0.2s ease-in, top 0.2s ease-in; -webkit-transition: opacity 0.2s ease-in, top 0.2s ease-in; transition: opacity 0.2s ease-in, top 0.2s ease-in;
+  -moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 8px;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  top: 0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+#st-1 .st-btn:last-child {
+  margin-right: 0;
+}
+#st-1 .st-btn > svg {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 10px;
+  vertical-align: top;
+}
+#st-1 .st-btn > img {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 10px;
+  vertical-align: top;
+}
+#st-1 .st-btn > span {
+  -moz-transition: all 0.2s ease-in; -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  min-width: 67px;
+  opacity: 1;
+  padding: 0 6px;
+  position: relative;
+  vertical-align: top;
+}
+#st-1.st-has-labels .st-btn {
+  min-width: 135px;
+}
+#st-1.st-has-labels .st-btn.st-remove-label {
+  min-width: 50px;
+}
+#st-1.st-has-labels .st-btn.st-remove-label > span {
+  display: none;
+}
+#st-1.st-has-labels .st-btn.st-hide-label > span {
+  display: none;
+}
+#st-1 .st-total {
+  color: #555;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 15px;
+  margin-right: 0;
+  max-width: 80px;
+  padding: 4px 8px;
+  text-align: center;
+}
+#st-1 .st-total.st-hidden {
+  display: none;
+}
+#st-1 .st-total > span {
+  font-size: 20px;
+  line-height: 22px;
+  display: block;
+  padding: 0;
+}
+#st-1 .st-total > span.st-shares {
+  font-size: 12px;
+  line-height: 12px;
+}
+#st-1.st-justified {
+  display: flex;
+  text-align: center;
+}
+#st-1.st-justified .st-btn {
+  -moz-flex: 1;
+-ms-flex: 1;
+-webkit-flex: 1;
+flex: 1;
+}#st-1 .st-btn:hover {
+  opacity: .8;
+  top: -4px;
+}#st-1 .st-btn[data-network='facebook'] {
+  background-color: #4267B2
+}
+#st-1 .st-btn[data-network='facebook'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='facebook'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='twitter'] {
+  background-color: #000000
+}
+#st-1 .st-btn[data-network='twitter'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='twitter'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='whatsapp'] {
+  background-color: #25d366
+}
+#st-1 .st-btn[data-network='whatsapp'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='whatsapp'] > span {
+  color: #fff
+}
+#st-1 .st-btn[data-network='telegram'] {
+  background-color: #0088cc
+}
+#st-1 .st-btn[data-network='telegram'] img {
+  filter: 
+}
+#st-1 .st-btn[data-network='telegram'] > span {
+  color: #fff
+}#st-1 .st-btn[data-network='snapchat'] > span {
+  color: #333};
+}</style></head><body id="mainbody" class="st-container" style="margin:0;padding:0;" data-select2-id="select2-data-mainbody">
+<style>
+    /*.zoom {
+      z-index: 100;
+      position: fixed;
+      top: 100px;
+      right: 24px;
+      height: 50px;
+      z-index : 9999;
+      color : black;
+    }
+    .zoom-fab {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      background-color: whitesmoke;
+      vertical-align: middle;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.2s ease-out;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      color: #FFF;
+    }*/
+    /*.zoom-fab:hover {
+      background-color: #edcb00;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    }*/
+    /*.zoom-btn-large {
+      width: 50px;
+      height: 50px;
+      line-height: 60px;
+    }
+    .zoom-menu {
+      position: absolute;
+      right: 80px;
+      left: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 100%;
+      width: 200px;
+      list-style: none;
+      text-align: right;
+    }
+    .zoom-menu li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .zoom-card {
+      position: absolute;
+      right: 50px;
+      top: 50px;
+      transition: box-shadow 0.25s;
+      padding: 1em;
+      border-radius: 2px;
+      background-color: whitesmoke;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      color: black;
+      min-width : 200px;
+    }
+    .zoom-card ul {
+      -webkit-padding-start: 0;
+      list-style: none;
+      text-align: left;
+    }
+    .scale-transition { transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important; }
+    .scale-transition.scale-out {
+      transform: scale(0);
+      transition: transform 0.2s !important;
+    }
+    .scale-transition.scale-in { transform: scale(1); }*/
+    /*
+    .zoom-btn-person { background-color: #F44336; }
+    .zoom-btn-person:hover { background-color: #e57373; }
+    .zoom-btn-doc { background-color: #ffeb3b; }
+    .zoom-btn-doc:hover { background-color: #fff176; }
+    .zoom-btn-tangram { background-color: #4CAF50; }
+    .zoom-btn-tangram:hover { background-color: #81c784; }
+    .zoom-btn-report { background-color: #2196F3; }
+    .zoom-btn-report:hover { background-color: #64b5f6; }
+    .zoom-btn-feedback { background-color: #9c27b0; }
+    */
+    
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 90%;
+        }
+    }
+</style>
+<!--
+<div class="zoom">
+  <a class="zoom-fab zoom-btn-large" id="zoomBtn"><i class="fa fa-wheelchair fa-2x" aria-hidden="true"></i></a>
+  <ul class="zoom-menu">
+    <li><a class="zoom-fab zoom-btn-sm zoom-title-color scale-transition scale-out"><img src="https://www.dosm.gov.my/v1/images/w3c/orange.png"></a></li>
+    <li><a class="zoom-fab zoom-btn-sm zoom-title-size scale-transition scale-out"><span style="font-size:20px;color:black;font-weight:bold;">A+</span></a></li>
+    <li><a class="zoom-fab zoom-btn-sm zoom-title-contrast scale-transition scale-out"><img src="/assets/img/contrast2.png" height="24"></a></li>
+  </ul>
+  <div class="zoom-card scale-transition scale-out">
+      <div class="zoom-card-content">
+          <div class="zoom-content-inner" id="zoom-content-color">
+              <p class="mb-10"><b>Text Color</b></p>
+              <img src="https://www.dosm.gov.my/v1/images/w3c/black.png">
+              <img src="https://www.dosm.gov.my/v1/images/w3c/orange.png">
+              <img src="https://www.dosm.gov.my/v1/images/w3c/red.png">
+              <img src="https://www.dosm.gov.my/v1/images/w3c/blue.png">
+              <img src="https://www.dosm.gov.my/v1/images/w3c/green.png">
+            </div>
+          <div class="zoom-content-inner" id="zoom-content-size">
+              <p class="mb-10"><b>Text Size</b></p>
+              <span style="font-size:20px;color:black;font-weight:bold;padding-right:0.5em;">A+</span>
+              <span style="font-size:20px;color:black;font-weight:bold;padding-right:0.5em;">A</span>
+              <span style="font-size:20px;color:black;font-weight:bold;">A-</span>
+          </div>
+          <div class="zoom-content-inner" id="zoom-content-contrast">
+              <p class="mb-10"><b>Text Contrast</b></p>
+              <img src="/assets/img/contrast2.png" height="24">
+              <img src="/assets/img/contrast1.png" height="24">
+              <img src="/assets/img/contrast3.png" height="24">
+          </div>
+      </div>
+  </div>
+</div>
+-->
+
+<!--script>
+    $('#zoomBtn').click(function() {
+      $('.zoom-btn-sm').toggleClass('scale-out');
+      if (!$('.zoom-card').hasClass('scale-out')) {
+        $('.zoom-card').toggleClass('scale-out');
+      }
+    });
+    $('.zoom-btn-sm').click(function() {
+      var btn = $(this);
+      var card = $('.zoom-card');
+      if ($('.zoom-card').hasClass('scale-out')) {
+        $('.zoom-card').toggleClass('scale-out');
+      }
+      $('.zoom-content-inner').hide();
+      if (btn.hasClass('zoom-title-color')) {
+        $('#zoom-content-color').show();
+      } else if (btn.hasClass('zoom-title-size')) {
+        $('#zoom-content-size').show();
+      } else if (btn.hasClass('zoom-title-contrast')) {
+        $('#zoom-content-contrast').show();
+      } 
+    });
+    
+</script-->
+
+
+
+ <div class="wrapper" style="overflow:hidden;background: #fff;z-index:1 !important;">
+<style>
+    #pre-loader {height:auto;}
+
+    #pre-loader img {top:25%;}
+    
+    .centertitle {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin-left:20%;
+        margin-right:20%;
+        width: 60%;
+        padding: 10px;
+    }
+    
+    .center {
+        position: absolute;
+        top: 80%;
+        transform: translate(0, -50%);
+        margin-left:20%;
+        margin-right:20%;
+        width: 60%;
+        padding: 10px;
+    }
+    
+    @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 480px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        .topbar-social{display:none;}
+    }
+    
+    @media only screen and (max-height: 575.98px) and (orientation: landscape) {
+        .topbar-social{display:none;}
+    }
+    
+    @media only screen and (min-width: 768px) and (orientation:portrait) and (min-height:1024px){
+        .topbar-social{display:none;}
+    }
+    
+    .select1{
+        top:2em;
+        left:0;
+        display:none;
+        position: absolute;
+        z-index: 999999;
+        width: 100px;
+        box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 25%);
+        padding:5px;
+    }
+        
+    .mega-menu *,.mega-menu .drop-down{
+        font-weight : 300;
+        font-size : 14px;
+        
+    }
+    
+    .mega-menu .drop-down .menu_link{
+        font-weight : 300;
+        font-size : 14px;
+        padding:0;
+        margin-bottom:5px;
+        text-transform:none;
+    }
+    
+    .mega-menu .drop-down .menu_link h3{
+        padding :0;
+        margin-top : 10px;
+        margin-bottom : 5px;
+    }
+    
+    .mega-menu .menu-links > li { padding: 0; }
+    
+    .mega-menu .menu-links > li > a, .mega-menu .menu-links > li > a:hover, .mega-menu .menu-links > li:hover > a{
+        color:black;
+    }
+    
+    .footer a:hover, #footer2 a:hover, #header a:hover{
+        color:black;
+    }
+    
+    .mega-menu .drop-down{
+        /*box-shadow: 0 1px 4px rgb(0 0 0 / 20%) !important;*/
+        box-shadow: 0px 7px 10px 0px rgb(0 0 0 / 29%);
+        border-top : 10px solid #edcb00;
+    }
+    
+    .mega-menu .menu-links > li > a{
+        text-transform:none;
+        font-weight : 300;
+    }
+    
+    .mega-menu .drop-down:after{
+        content:"";
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width:100%;
+        height:100%;
+        z-index:-1;
+        opacity: 0.2;
+        
+        background-image:url(https://upload.wikimedia.org/wikipedia/commons/7/77/Kuala_Lumpur_banner_Skyline.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background position: center center !important;
+    }
+    
+    .new-text{
+        font-size : 10px !important;
+        animation: blinker 1s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+    
+    @media (max-width: 991px){
+        .mega-menu .menu-logo img {
+            margin: 0;
+        }
+        .mega-menu .menu-links > li > a, .mega-menu .menu-links > li > a:hover, .mega-menu .menu-links > li:hover > a{
+            color:black !important;
+        }
+    }
+    
+    @media (min-width: 1201px){
+        .gridlimit  {
+            max-width: 1200px;
+           
+           
+        }
+    }
+    
+    @media (max-width: 991px){
+        .mega-menu .menu-logo img {
+            height:40px;
+        }
+    }
+    
+    @media (min-width: 992px){
+        .mega-menu .menu-logo img {
+            height:60px;
+        }
+    }
+    
+    .menu-mobile-collapse-trigger {
+        display:none;
+    }
+    
+    @media screen and (max-width: 991px) {
+        .mega-menu .menu-mobile-collapse-trigger {
+            display: none;
+        }
+    }
+    
+    .mega-menu .menu-mobile-side-panel {
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        width: 35px;
+        background: transparent;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        float: right;
+        cursor: pointer;
+        text-align:center;
+        font-size:20px;
+        -webkit-transition: background 200ms ease;
+        transition: background 200ms ease;
+    }
+    
+    @media screen and (max-width: 991px) {
+        .mega-menu .menu-mobile-side-panel {
+            display: block;
+            height: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9999;
+        }
+    }
+    
+    .hide{
+       margin-left:-300px;
+       transition: all 0.8s ease;
+     }
+     
+    .side-menu{
+        position:absolute;
+        top:0px;
+        color:white;
+        width: 299px;
+        height:350px;
+        background: transparent;
+        transition: all 0.8s ease;
+    }
+
+    .side-menu > div > ul li a {
+        background-color: #ffffff;
+    }
+    
+    .side-menu:last-child > div >  ul li a {
+        background-color: #ffffff;
+    }
+
+    .show-menu{
+      margin-left:0 !important;
+      transition: all 0.8s ease;
+    }
+
+    .side-menu-items {
+        border-bottom: 1px solid #02536A;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    @-moz-keyframes scroll {
+      from { -moz-transform: translateX(100%); }
+      to { -moz-transform: translateX(-100%); }
+    }
+
+    @-webkit-keyframes scroll {
+      from { -webkit-transform: translateX(100%); }
+      to { -webkit-transform: translateX(-100%); }
+    }
+
+    @keyframes scroll {
+    
+      from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+    
+      to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+    
+    }
+    
+    .blink_me {
+      animation: blinker 1s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .menu-bar > .menu-links > li > a{
+        font-weight: 500;
+    }
+    
+    .mega-menu .menu-links > li > a, .mega-menu .drop-down .menu_link{
+        font-size: 16px;
+    }
+    
+    .mega-menu .drop-down h3, .mega-menu .drop-down-tab-bar h3{
+        line-height:1.1;
+    }
+    
+    .mega-menu .drop-down a:hover, .mega-menu .drop-down a h3:hover{
+        color: #008e63 !important;
+    }
+    
+    .top-option{
+        float : right;
+        height : 36px;
+        margin-left : 0.7em;
+    }
+    
+    .top-option img {
+        margin-top : 5px;
+    }
+    
+    .mega-menu > section.menu-list-items .menu-bar > ul > li{
+        vertical-align: top;
+        padding-top : 1em !important;
+        
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .searchcontainer:hover {
+            background:#f0f0f0;   
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .mega-menu > section.menu-list-items {
+            height:auto !important;   
+        }
+    }
+    
+    .header {
+        padding-top:20px;
+    }
+    
+    .marquee p {display:inline-block !important;color:white;margin-left:3em;}
+    
+    @media screen and (max-width: 991px) {
+        .main-header-section {
+            background:#fff;
+            border-bottom: 2px solid #15818d;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        
+        .header {
+            padding-top:0px;
+        }
+        
+        #logo_img {
+            height: 70px !important;
+        }
+        
+        .form-control-search {
+            background:#f4f4f4;
+        }
+    }
+    
+    @media screen and (min-width: 992px) and (max-width: 1246px)  {
+        #logo_img {
+            height: 70px !important;
+        }
+    }
+    
+</style>
+
+<div class="st-pusher" data-select2-id="select2-data-5-7tva">
+    <div class="st-menu st-effect-6 scrollbar" id="menu-1" tabindex="1" style="overflow-y: hidden; outline: none;">
+        <center>
+            <img src="./Department of Statistics Malaysia_files/preloader-English.png" alt="" style=" width:120px;max-width:120px;margin-top:20px;">
+        </center>
+        <div class="nav-title" style="padding: 30px;"> 
+            <p style="font-size:1.2em;font-weight:bold;">Main Menu<a href="javascript:void(0)" class="closex" style="float:right;color:black;"><i class="fa fa-close"></i></a></p>        
+            <!-- <a href="#" class="nav-link" id="layer1">← back</a> -->
+            <ul style=""><li class="side-menu-items"><a href="https://www.dosm.gov.my/portal-main/home" class="l1">Home</a></li><li class="side-menu-items">
+                <a href="javascript:void(0)" target="" class="l1" value="2">About Us<span> ›</span></a>
+            </li><li class="side-menu-items">
+                <a href="javascript:void(0)" target="" class="l1" value="3">Statistics<span> ›</span></a>
+            </li><li class="side-menu-items">
+                <a href="javascript:void(0)" target="" class="l1" value="4">Methods &amp; Standards<span> ›</span></a>
+            </li><li class="side-menu-items">
+                <a href="javascript:void(0)" target="" class="l1" value="5">Services &amp; Tools<span> ›</span></a>
+            </li><li class="side-menu-items">
+                <a href="javascript:void(0)" target="" class="l1" value="6">Gallery<span> ›</span></a>
+            </li><li class="side-menu-items"><a href="https://www.dosm.gov.my/portal-main/links/dosm_community/" class="l1">DOSM's Community</a></li></ul></div><div class="layer1 side-menu hide" id="layer2" style="height:100%;padding:30px;padding-top:170px;">
+                <div style="background:#ffffff;margin:0;padding:0;width:100%;height:calc(100% - 170px);">
+                    <p style="font-size:1.2em;font-weight:bold;color:black;">About Us
+                        <a href="javascript:void(0)" class="closex" style="float:right;color:black;">
+                            <i class="fa fa-close"></i>
+                        </a>
+                    </p>
+                    <ul data-value="2" style="overflow-y:auto;">
+                        <li class="side-menu-items" style="border: none;margin-bottom: 15px;">
+                            <a href="https://www.dosm.gov.my/portal-main/time-series#a" class="nav-link l1" value="2" id="l2" style="padding:0;">
+                                <span style="background-color: #02536A;color: #fff;padding: 2px;padding-left: 10px;padding-right: 10px;border-radius: 15px;">← back</span>
+                            </a>
+                        </li><li class="side-menu-items"><a target="" href="javascript:void(0)" class="l1" style="font-weight:bold;">DOSM Profile</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/article/background-role-function/" class="l1" style="font-size: 0.8em;">Background, Role &amp; Function</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/article/vision-mission-motto-objectives/" class="l1" style="font-size: 0.8em;">Objectives, Vision, Mission &amp; Motto</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/article/organisation-chart/" class="l1" style="font-size: 0.8em;">Organisation Chart</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/article/division-functions/" class="l1" style="font-size: 0.8em;">Division Functions</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/article/core-values/" class="l1" style="font-size: 0.8em;">Core Values</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/article/songs" class="l1" style="font-size: 0.8em;">Songs</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/article/logo/" class="l1" style="font-size: 0.8em;">Logo</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/article/leaders/" class="l1" style="font-size: 0.8em;">Leaders</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/article/chief-digital-officer/" class="l1" style="font-size: 0.8em;">Chief Digital Officer (CDO)</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/clients-charter" class="l1" style="font-weight:bold;">Policy &amp; Client's Charter</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/publication-list2/strategic_plan/" class="l1" style="font-weight:bold;">Strategic Plan</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/publication-list2/annual-report" class="l1" style="font-weight:bold;">Annual Report</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/publication-list2/legislation/" class="l1" style="font-weight:bold;">Act &amp; Regulation</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/article/pssn/" class="l1" style="font-weight:bold;">The Strengthening of The National Statistical System (SNSS)</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/awards" class="l1" style="font-weight:bold;">Awards &amp; Recognition</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/article/contact-us/" class="l1" style="font-weight:bold;">Contact Us</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/directory/" class="l1" style="font-weight:bold;">Directory</a></li><li class="side-menu-items"><a target="" href="javascript:void(0)" class="l1" style="font-weight:bold;">Procument</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/procurement-ads" class="l1" style="font-size: 0.8em;">Advertisement</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/procurement-result" class="l1" style="font-size: 0.8em;">Result</a></li></ul></div></div><div class="layer1 side-menu hide" id="layer3" style="height:100%;padding:30px;padding-top:170px;">
+                <div style="background:#ffffff;margin:0;padding:0;width:100%;height:calc(100% - 170px);">
+                    <p style="font-size:1.2em;font-weight:bold;color:black;">Statistics
+                        <a href="javascript:void(0)" class="closex" style="float:right;color:black;">
+                            <i class="fa fa-close"></i>
+                        </a>
+                    </p>
+                    <ul data-value="3" style="overflow-y:auto;">
+                        <li class="side-menu-items" style="border: none;margin-bottom: 15px;">
+                            <a href="https://www.dosm.gov.my/portal-main/time-series#a" class="nav-link l1" value="3" id="l3" style="padding:0;">
+                                <span style="background-color: #02536A;color: #fff;padding: 2px;padding-left: 10px;padding-right: 10px;border-radius: 15px;">← back</span>
+                            </a>
+                        </li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/arc" class="l1" style="font-weight:bold;">Advance Release Calendar</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/publication" class="l1" style="font-weight:bold;">Publications</a></li><li class="side-menu-items"><a target="_blank" href="https://open.dosm.gov.my/" class="l1" style="font-weight:bold;">Open Data</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/economy" class="l1" style="font-weight:bold;">Economy</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/agriculture" class="l1" style="font-size: 0.8em;">Agriculture</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/construction" class="l1" style="font-size: 0.8em;">Construction</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/economics-indicator" class="l1" style="font-size: 0.8em;">Economics Indicator</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/external-sector" class="l1" style="font-size: 0.8em;">External Sector</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/manufacturing" class="l1" style="font-size: 0.8em;">Manufacturing</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/mining-and-quarrying" class="l1" style="font-size: 0.8em;">Mining &amp; Quarrying</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/national-accounts" class="l1" style="font-size: 0.8em;">National Accounts</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/others" class="l1" style="font-size: 0.8em;">Others</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/prices" class="l1" style="font-size: 0.8em;">Prices</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/services" class="l1" style="font-size: 0.8em;">Services</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/social" class="l1" style="font-weight:bold;">Social</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/enviroment" class="l1" style="font-size: 0.8em;">Environment</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/household-income-and-expenditure" class="l1" style="font-size: 0.8em;">Household Income &amp; Expenditure</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/social-indicators" class="l1" style="font-size: 0.8em;">Social Indicators</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/population-and-demography" class="l1" style="font-weight:bold;">Population &amp; Demography</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/labour-market" class="l1" style="font-weight:bold;">Labour Market</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/small-area-statistics" class="l1" style="font-weight:bold;">Small Area Statistics</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/ad-hoc" class="l1" style="font-weight:bold;">Ad hoc</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/release-subthemes/agriculture-census" class="l1" style="font-weight:bold;">Agriculture Census</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/article/system-of-environmental-economic-accounting" class="l1" style="font-weight:bold;">System of Environmental-Economic Accounting (SEEA)</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/article/sustainable-development-goals" class="l1" style="font-weight:bold;">Sustainable Development Goals (SDG)</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/article/covid-19" class="l1" style="font-weight:bold;">COVID-19 Malaysia</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/pocket-stats" class="l1" style="font-weight:bold;">Pocket Stats</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/nsdp/" class="l1" style="font-weight:bold;">National Summary Data Page (NSDP)</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/release-alphabet" class="l1" style="font-weight:bold;">Explore Release By Alphabet</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/glossary" class="l1" style="font-weight:bold;">Glossary A-Z</a></li></ul></div></div><div class="layer1 side-menu hide" id="layer4" style="height:100%;padding:30px;padding-top:170px;">
+                <div style="background:#ffffff;margin:0;padding:0;width:100%;height:calc(100% - 170px);">
+                    <p style="font-size:1.2em;font-weight:bold;color:black;">Methods &amp; Standards
+                        <a href="javascript:void(0)" class="closex" style="float:right;color:black;">
+                            <i class="fa fa-close"></i>
+                        </a>
+                    </p>
+                    <ul data-value="4" style="overflow-y:auto;">
+                        <li class="side-menu-items" style="border: none;margin-bottom: 15px;">
+                            <a href="https://www.dosm.gov.my/portal-main/time-series#a" class="nav-link l1" value="4" id="l4" style="padding:0;">
+                                <span style="background-color: #02536A;color: #fff;padding: 2px;padding-left: 10px;padding-right: 10px;border-radius: 15px;">← back</span>
+                            </a>
+                        </li><li class="side-menu-items"><a target="" href="javascript:void(0)" class="l1" style="font-weight:bold;">Metadata</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="_blank" href="https://www.dosm.gov.my/assets/documents/Metadata_Guideline.pdf" class="l1" style="font-size: 0.8em;">Metadata Guideline</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/downloadslist/metadata/" class="l1" style="font-size: 0.8em;">Metadata - Publication Level </a></li><li class="side-menu-items"><a target="" href="javascript:void(0)" class="l1" style="font-weight:bold;">Codes &amp; Classification</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/links/regional-classifications" class="l1" style="font-size: 0.8em;">Regional Classifications</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/links/social-demographic-classifications" class="l1" style="font-size: 0.8em;">Social / Demographic Classifications</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/downloadslist/economic" class="l1" style="font-size: 0.8em;">Economic Classifications</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/downloadslist/reference/" class="l1" style="font-weight:bold;">Reference</a></li></ul></div></div><div class="layer1 side-menu hide" id="layer5" style="height:100%;padding:30px;padding-top:170px;">
+                <div style="background:#ffffff;margin:0;padding:0;width:100%;height:calc(100% - 170px);">
+                    <p style="font-size:1.2em;font-weight:bold;color:black;">Services &amp; Tools
+                        <a href="javascript:void(0)" class="closex" style="float:right;color:black;">
+                            <i class="fa fa-close"></i>
+                        </a>
+                    </p>
+                    <ul data-value="5" style="overflow-y:auto;">
+                        <li class="side-menu-items" style="border: none;margin-bottom: 15px;">
+                            <a href="https://www.dosm.gov.my/portal-main/time-series#a" class="nav-link l1" value="5" id="l5" style="padding:0;">
+                                <span style="background-color: #02536A;color: #fff;padding: 2px;padding-left: 10px;padding-right: 10px;border-radius: 15px;">← back</span>
+                            </a>
+                        </li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/census-surveys-category" class="l1" style="font-weight:bold;">Census &amp; Surveys</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/online-services" class="l1" style="font-weight:bold;">Online Services</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/article/data-request" class="l1" style="font-weight:bold;">Data Request</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/article/online-surveys" class="l1" style="font-weight:bold;">Respondents</a></li></ul></div></div><div class="layer1 side-menu hide" id="layer6" style="height:100%;padding:30px;padding-top:170px;">
+                <div style="background:#ffffff;margin:0;padding:0;width:100%;height:calc(100% - 170px);">
+                    <p style="font-size:1.2em;font-weight:bold;color:black;">Gallery
+                        <a href="javascript:void(0)" class="closex" style="float:right;color:black;">
+                            <i class="fa fa-close"></i>
+                        </a>
+                    </p>
+                    <ul data-value="6" style="overflow-y:auto;">
+                        <li class="side-menu-items" style="border: none;margin-bottom: 15px;">
+                            <a href="https://www.dosm.gov.my/portal-main/time-series#a" class="nav-link l1" value="6" id="l6" style="padding:0;">
+                                <span style="background-color: #02536A;color: #fff;padding: 2px;padding-left: 10px;padding-right: 10px;border-radius: 15px;">← back</span>
+                            </a>
+                        </li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/time-series#" class="l1" style="font-weight:bold;">Media</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/downloadslist/press_statement/" class="l1" style="font-size: 0.8em;">Press Statement</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/downloadslist/general_news/" class="l1" style="font-size: 0.8em;">General News</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/downloadslist/media_release/" class="l1" style="font-size: 0.8em;">Media Coverage for Statistical Releases</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/video-gallery-list" class="l1" style="font-size: 0.8em;">Video Gallery</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/time-series#" class="l1" style="font-weight:bold;">Newsletter &amp; Bulletin</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/document-list/newsletter/" class="l1" style="font-size: 0.8em;">Newsletter</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/document-list/news-bulletin-stats/" class="l1" style="font-size: 0.8em;">Bulletin</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/time-series#" class="l1" style="font-weight:bold;">Programme</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/mystatsday" class="l1" style="font-size: 0.8em;">MyStats Day</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/mystatsconference" class="l1" style="font-size: 0.8em;">MyStats Conference</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/international-participation-list" class="l1" style="font-size: 0.8em;">International Programme</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/myacss2025" class="l1" style="font-size: 0.8em;">ASEAN-Malaysia Chairmanship 2025</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/photo-gallery-list" class="l1" style="font-size: 0.8em;">Gallery Photo</a></li><li class="side-menu-items"><a target="" href="https://www.dosm.gov.my/portal-main/time-series#" class="l1" style="font-weight:bold;">Research Papers</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/journal" class="l1" style="font-size: 0.8em;">Journals</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/document-list/research_posters/" class="l1" style="font-size: 0.8em;">Research Posters</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/downloadslist/technical_paper/" class="l1" style="font-size: 0.8em;">Technical Paper</a></li><li class="side-menu-items" style="margin-left:15px;"><a target="" href="https://www.dosm.gov.my/portal-main/downloadslist/report" class="l1" style="font-size: 0.8em;">Report</a></li></ul></div></div><div class="slide-footer">
+        <div class="copy-right">
+            <p class="mt-15" style="font-size:0.8em;"> 
+                ©Copyright 
+                <span id="copyright"> <script>document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()))</script>2026</span> 
+                <a href="https://www.dosm.gov.my/portal-main/time-series#"> Department Of Statistics Malaysia (DOSM) </a> All Rights Reserved 
+            </p>
+        </div>
+    </div>
+</div>
+<nav id="navbar" class="fixed-top">
+    <div class="marquee" style="background-color:#15818d;height:25px;width:100%;overflow: hidden;"><div style="width: 100000px; margin-left: 1264.67px; animation: 57.0095s linear 0s infinite normal none running marqueeAnimation-372665;" class="js-marquee-wrapper"><div class="js-marquee" style="margin-right: 0px; float: left;"><p>The Department of Statistics Malaysia (DOSM) will implement digital dissemination of publications as the primary approach effective 1 May 2026.</p><p>Customer Satisfaction Survey 2026&nbsp;<a href="https://docs.google.com/forms/d/e/1FAIpQLSexHinG14hBMVnMahvm4NmI42YB5EoZHSpcJ_anSNHSOgDRJg/viewform"><b><u><font color="#ff9c00">here</font></u></b></a><br></p><p>Get the latest procurement advertisement <a href="https://www.dosm.gov.my/portal-main/procurement-ads"><b><u><font color="#ff9c00">here</font></u></b></a><br></p><p>Get the latest procurement result <a href="https://www.dosm.gov.my/portal-main/procurement-result"><b><u><font color="#ff9c00">here</font></u></b></a><br></p></div><style>@-webkit-keyframes marqueeAnimation-372665  { 100%  {margin-left:-2339.91px}}</style></div></div>
+    <header id="header" class="header default" style="background-color:white;"><div class="menu" style="">
+        <nav id="menu" class="mega-menu">
+            <section class="menu-list-items" style="min-height: 80px; background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 87%, rgba(255, 255, 255, 0) 100%); height: 80px;">
+                    <div class="container main-header-section">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12" style="position:static;">
+                                <ul class="menu-logo" style="padding:0;">
+                                    <li>
+                                        <a href="https://www.dosm.gov.my/"><img id="logo_img" src="./Department of Statistics Malaysia_files/logo-dosm-English.png" alt="logo"></a>
+                                        <div class="menu-mobile-side-panel">
+                                            
+                                                <i class="fa fa-bars side-panel-trigger" style="font-size:30px;margin-top:5px;"></i>
+                                           
+                                        </div>
+                                    <div class="menu-mobile-collapse-trigger"><span></span></div></li>
+                                    
+                                </ul>
+                                <div class="menu-bar">
+                                
+                                    <div>
+                                        <span class="top-option" style="margin-left:2em;">
+                                            <form method="get" action="https://www.dosm.gov.my/portal-main/search">
+                                                <input class="form-control-search mr-sm-2" name="keyword" style="border: 1px solid #888;width:200px;" type="search" placeholder="Search" aria-label="Search">
+                                            </form>
+                                        </span>
+                                        
+                                        <span class="top-option">
+                                            <a href="https://www.dosm.gov.my/portal-main/time-series#" data-toggle="modal" data-target="#modalW3C">
+                                                <img src="./Department of Statistics Malaysia_files/wheelchair.png" height="20" title="W3C">
+                                            </a>
+                                        </span>
+                                        <span class="top-option">
+                                            <a href="https://www.dosm.gov.my/portal-main/article/contact-us">
+                                                <img src="./Department of Statistics Malaysia_files/icon-phone.png" height="25" title="Contact Us">
+                                            </a>
+                                        </span>
+                                        <span class="top-option">
+                                            <a href="https://www.dosm.gov.my/portal-main/faq">
+                                                <img src="./Department of Statistics Malaysia_files/icon-faq.png" height="25" title="FAQs">
+                                            </a>
+                                        </span>
+                                        <span class="top-option">
+                                            <a href="https://www.dosm.gov.my/portal-main/article/feedback">
+                                                <img src="./Department of Statistics Malaysia_files/icon-feedback.png" height="25" title="Feedback">
+                                            </a>
+                                        </span>
+                                        <span class="top-option">
+                                            <a href="https://www.dosm.gov.my/portal-main/article/sitemap">
+                                                <img src="./Department of Statistics Malaysia_files/icon-sitemap.png" height="25" title="Sitemap">
+                                            </a>
+                                        </span><span class="top-option" style="margin-right:2em;">
+                                            Language Options : 
+                                            <a href="https://www.dosm.gov.my/site/translate?language=Malay" class="lang-option ">MY</a>&nbsp;&nbsp;
+                                            <a href="https://www.dosm.gov.my/site/translate?language=English" class="lang-option lang_active">EN</a>
+                                            
+                                        </span>
+                                    </div>
+                                
+                                    <ul class="menu-links" style="max-height: 400px; display: none;"><li><a href="https://www.dosm.gov.my/portal-main/home" target="">Home</a></li><li class="hoverTrigger">
+                                                    <a href="javascript:void(0)">About Us <div class="mobileTriggerButton"></div></a>
+                                                    <div class="drop-down grid-col-12 effect-expand-top" style="transition: 400ms;">
+                                                        <div class="grid-row container" style="margin:0 auto !important;float:none;"><div class="grid-col-3">
+                                                        <ul><li><span class="menu_link"><h3>DOSM Profile</h3></span></li><li><a href="https://www.dosm.gov.my/portal-main/article/background-role-function/" class="menu_link" target="">Background, Role &amp; Function</a></li><li><a href="https://www.dosm.gov.my/portal-main/article/vision-mission-motto-objectives/" class="menu_link" target="">Objectives, Vision, Mission &amp; Motto</a></li><li><a href="https://www.dosm.gov.my/portal-main/article/organisation-chart/" class="menu_link" target="">Organisation Chart</a></li><li><a href="https://www.dosm.gov.my/portal-main/article/division-functions/" class="menu_link" target="">Division Functions</a></li><li><a href="https://www.dosm.gov.my/portal-main/article/core-values/" class="menu_link" target="">Core Values</a></li><li><a href="https://www.dosm.gov.my/portal-main/article/songs" class="menu_link" target="">Songs</a></li><li><a href="https://www.dosm.gov.my/portal-main/article/logo/" class="menu_link" target="">Logo</a></li><li><a href="https://www.dosm.gov.my/portal-main/article/leaders/" class="menu_link" target="">Leaders</a></li><li><a href="https://www.dosm.gov.my/portal-main/article/chief-digital-officer/" class="menu_link" target="">Chief Digital Officer (CDO)</a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    <div class="grid-col-3">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/clients-charter" class="menu_link" target=""><h3>Policy &amp; Client's Charter</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/publication-list2/strategic_plan/" class="menu_link" target=""><h3>Strategic Plan</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/publication-list2/annual-report" class="menu_link" target=""><h3>Annual Report</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/publication-list2/legislation/" class="menu_link" target=""><h3>Act &amp; Regulation</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/article/pssn/" class="menu_link" target=""><h3>The Strengthening of The National Statistical System (SNSS)</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/awards" class="menu_link" target=""><h3>Awards &amp; Recognition</h3></a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    <div class="grid-col-3">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/article/contact-us/" class="menu_link" target=""><h3>Contact Us</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/directory/" class="menu_link" target=""><h3>Directory</h3></a></li><li><span class="menu_link"><h3>Procument</h3></span></li><li><a href="https://www.dosm.gov.my/portal-main/procurement-ads" class="menu_link" target="">Advertisement</a></li><li><a href="https://www.dosm.gov.my/portal-main/procurement-result" class="menu_link" target="">Result</a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    </div>
+                                               
+                                                    </div>
+                                                </li><li class="hoverTrigger">
+                                                    <a href="javascript:void(0)">Statistics <div class="mobileTriggerButton"></div></a>
+                                                    <div class="drop-down grid-col-12 effect-expand-top" style="transition: 400ms;">
+                                                        <div class="grid-row container" style="margin:0 auto !important;float:none;"><div class="grid-col-2">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/arc" class="menu_link" target=""><h3>Advance Release Calendar</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/publication" class="menu_link" target=""><h3>Publications</h3></a></li><li><a href="https://open.dosm.gov.my/" class="menu_link" target="_blank"><h3>Open Data</h3></a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    <div class="grid-col-2">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/economy" class="menu_link" target=""><h3>Economy</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/agriculture" class="menu_link" target="">Agriculture</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/construction" class="menu_link" target="">Construction</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/economics-indicator" class="menu_link" target="">Economics Indicator</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/external-sector" class="menu_link" target="">External Sector</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/manufacturing" class="menu_link" target="">Manufacturing</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/mining-and-quarrying" class="menu_link" target="">Mining &amp; Quarrying</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/national-accounts" class="menu_link" target="">National Accounts</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/others" class="menu_link" target="">Others</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/prices" class="menu_link" target="">Prices</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/services" class="menu_link" target="">Services</a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    <div class="grid-col-2">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/social" class="menu_link" target=""><h3>Social</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/enviroment" class="menu_link" target="">Environment</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/household-income-and-expenditure" class="menu_link" target="">Household Income &amp; Expenditure</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/social-indicators" class="menu_link" target="">Social Indicators</a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/population-and-demography" class="menu_link" target=""><h3>Population &amp; Demography</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/labour-market" class="menu_link" target=""><h3>Labour Market</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/small-area-statistics" class="menu_link" target=""><h3>Small Area Statistics</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/ad-hoc" class="menu_link" target=""><h3>Ad hoc</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/release-subthemes/agriculture-census" class="menu_link" target=""><h3>Agriculture Census</h3></a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    <div class="grid-col-6">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/article/system-of-environmental-economic-accounting" class="menu_link" target=""><h3>System of Environmental-Economic Accounting (SEEA)</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/article/sustainable-development-goals" class="menu_link" target=""><h3>Sustainable Development Goals (SDG)</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/article/covid-19" class="menu_link" target=""><h3>COVID-19 Malaysia</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/pocket-stats" class="menu_link" target=""><h3>Pocket Stats</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/nsdp/" class="menu_link" target=""><h3>National Summary Data Page (NSDP)</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/release-alphabet" class="menu_link" target=""><h3>Explore Release By Alphabet</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/glossary" class="menu_link" target=""><h3>Glossary A-Z</h3></a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    </div>
+                                               
+                                                    </div>
+                                                </li><li class="hoverTrigger">
+                                                    <a href="javascript:void(0)">Methods &amp; Standards <div class="mobileTriggerButton"></div></a>
+                                                    <div class="drop-down grid-col-12 effect-expand-top" style="transition: 400ms;">
+                                                        <div class="grid-row container" style="margin:0 auto !important;float:none;"><div class="grid-col-4">
+                                                        <ul><li><span class="menu_link"><h3>Metadata</h3></span></li><li><a href="https://www.dosm.gov.my/assets/documents/Metadata_Guideline.pdf" class="menu_link" target="_blank">Metadata Guideline</a></li><li><a href="https://www.dosm.gov.my/portal-main/downloadslist/metadata/" class="menu_link" target="">Metadata - Publication Level </a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    <div class="grid-col-4">
+                                                        <ul><li><span class="menu_link"><h3>Codes &amp; Classification</h3></span></li><li><a href="https://www.dosm.gov.my/portal-main/links/regional-classifications" class="menu_link" target="">Regional Classifications</a></li><li><a href="https://www.dosm.gov.my/portal-main/links/social-demographic-classifications" class="menu_link" target="">Social / Demographic Classifications</a></li><li><a href="https://www.dosm.gov.my/portal-main/downloadslist/economic" class="menu_link" target="">Economic Classifications</a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    <div class="grid-col-4">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/downloadslist/reference/" class="menu_link" target=""><h3>Reference</h3></a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    </div>
+                                               
+                                                    </div>
+                                                </li><li class="hoverTrigger">
+                                                    <a href="javascript:void(0)">Services &amp; Tools <div class="mobileTriggerButton"></div></a>
+                                                    <div class="drop-down grid-col-12 effect-expand-top" style="transition: 400ms;">
+                                                        <div class="grid-row container" style="margin:0 auto !important;float:none;"><div class="grid-col-2">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/census-surveys-category" class="menu_link" target=""><h3>Census &amp; Surveys</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/online-services" class="menu_link" target=""><h3>Online Services</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/article/data-request" class="menu_link" target=""><h3>Data Request</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/article/online-surveys" class="menu_link" target=""><h3>Respondents</h3></a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    </div>
+                                               
+                                                    </div>
+                                                </li><li class="hoverTrigger">
+                                                    <a href="javascript:void(0)">Gallery <div class="mobileTriggerButton"></div></a>
+                                                    <div class="drop-down grid-col-12 effect-expand-top" style="transition: 400ms;">
+                                                        <div class="grid-row container" style="margin:0 auto !important;float:none;"><div class="grid-col-3">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/time-series#" class="menu_link" target=""><h3>Media</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/downloadslist/press_statement/" class="menu_link" target="">Press Statement</a></li><li><a href="https://www.dosm.gov.my/portal-main/downloadslist/general_news/" class="menu_link" target="">General News</a></li><li><a href="https://www.dosm.gov.my/portal-main/downloadslist/media_release/" class="menu_link" target="">Media Coverage for Statistical Releases</a></li><li><a href="https://www.dosm.gov.my/portal-main/video-gallery-list" class="menu_link" target="">Video Gallery</a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    <div class="grid-col-3">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/time-series#" class="menu_link" target=""><h3>Newsletter &amp; Bulletin</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/document-list/newsletter/" class="menu_link" target="">Newsletter</a></li><li><a href="https://www.dosm.gov.my/portal-main/document-list/news-bulletin-stats/" class="menu_link" target="">Bulletin</a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    <div class="grid-col-3">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/time-series#" class="menu_link" target=""><h3>Programme</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/mystatsday" class="menu_link" target="">MyStats Day</a></li><li><a href="https://www.dosm.gov.my/portal-main/mystatsconference" class="menu_link" target="">MyStats Conference</a></li><li><a href="https://www.dosm.gov.my/portal-main/international-participation-list" class="menu_link" target="">International Programme</a></li><li><a href="https://www.dosm.gov.my/portal-main/myacss2025" class="menu_link" target="">ASEAN-Malaysia Chairmanship 2025</a></li><li><a href="https://www.dosm.gov.my/portal-main/photo-gallery-list" class="menu_link" target="">Gallery Photo</a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    <div class="grid-col-3">
+                                                        <ul><li><a href="https://www.dosm.gov.my/portal-main/time-series#" class="menu_link" target=""><h3>Research Papers</h3></a></li><li><a href="https://www.dosm.gov.my/portal-main/journal" class="menu_link" target="">Journals</a></li><li><a href="https://www.dosm.gov.my/portal-main/document-list/research_posters/" class="menu_link" target="">Research Posters</a></li><li><a href="https://www.dosm.gov.my/portal-main/downloadslist/technical_paper/" class="menu_link" target="">Technical Paper</a></li><li><a href="https://www.dosm.gov.my/portal-main/downloadslist/report" class="menu_link" target="">Report</a></li></ul>
+                                                    
+                                                    
+                                                   
+                                                    </div>
+                                                    </div>
+                                               
+                                                    </div>
+                                                </li><li><a href="https://www.dosm.gov.my/portal-main/links/dosm_community/" target="">DOSM's Community</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </nav>
+        </div>
+    </header>
+</nav>
+
+
+
+
+<div class="content" id="content" style="padding-top:140px;" data-select2-id="select2-data-content">
+
+<script>
+    $(document).ready(function(){
+        $(".select_button1").click(function() {
+            $(".select1").toggle();
+        });
+        $(".select1").on("change", function() {
+            var icon = "";
+            var newurl = "";
+            if ($(".select1").find(":selected").val() == "malay") {
+                icon = "<img src=\"/assets/dosm/images/flag-Malay.png\" style=\"width:30px;\">";
+                newurl = "https://www.dosm.gov.my/site/translate?language=Malay";
+            } else if ($(".select1").find(":selected").val() == "english") {
+                icon = "<img src=\"/assets/dosm/images/flag-English.png\" style=\"width:30px;\">";
+                newurl = "https://www.dosm.gov.my/site/translate?language=English";
+            }
+            $("#languagetext").html(icon);
+            $(".select1").hide();
+            if (newurl!="") {
+                window.location.href = newurl;
+            }
+        });
+ 
+    });
+    
+$(".l1").on("click",function(){
+            var tag = $(this).attr("value");
+            var tag1 = $(this).text();
+            
+            //alert(tag);
+
+            var back_link="#layer"+tag;
+            $(".nav-link").attr("href",back_link);
+            //$(".nav-link").text(tag1);
+            $(".nav-link").attr("value",tag);
+            $("#layer"+tag).removeClass("hide-menu"); 
+            $("#layer"+tag).toggleClass("show-menu"); 
+        });
+        
+        $(".nav-link").on("click",function(){
+            var tag = $(this).attr("href");
+            var val= $(this).attr("value");
+
+            $(tag).removeClass("show-menu"); 
+            var back_link="#layer"+(val-1);
+            $(".nav-link").attr("href",back_link);
+            $(".nav-link").attr("value",val-1);
+
+    
+        });
+        
+        $(".closex").on("click",function(){
+           $(".st-container").removeClass("st-menu-open"); 
+           $(".st-container").removeClass("st-effect-6"); 
+        });
+        
+        $(".side-panel-trigger").on("click",function(){
+           $(".st-container").addClass("st-effect-6"); 
+        });
+        
+
+        
+        
+</script><section class="page-title small gray-bg">
+  <div class="container">
+  
+    <div class="row">
+            <div class="col-lg-9">
+                <div class="page-title-name"><h3 class="mb-0 pb-0">Time Series Data</h3></div>
+                <ul class="page-breadcrumb" style="border:0;">
+                    <li><a href="https://www.dosm.gov.my/portal-main/home"><i class="fa fa-home"></i> Home </a> <i class="fa fa-angle-double-right"></i></li>
+                    <li>Statistics <i class="fa fa-angle-double-right"></i></li>
+                    <li><span>Time Series Data</span> </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 text-right">
+                Share this page:
+                
+                <!--
+                <div class="addthis_inline_share_toolbox" 
+                data-url="https://www.dosm.gov.my/portal-main/time-series" data-title="Time Series Data" 
+                data-description="List of Time Series Data provided by Department of Statistics Malaysia" data-media="https://www.dosm.gov.my/assets/meta-img/time-series-data.png"></div>
+                -->
+                
+                <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons mt-10 st-center st-has-labels  st-inline-share-buttons st-animated" id="st-1"><div class="st-total ">
+  <span class="st-label">21</span>
+  <span class="st-shares">
+    Shares
+  </span>
+</div><div class="st-btn st-first st-hide-label st-remove-label" data-network="facebook" style="display: inline-block;">
+  <img alt="facebook sharing button" src="./Department of Statistics Malaysia_files/facebook.svg">
+  <span class="st-label"></span>
+</div><div class="st-btn st-hide-label st-remove-label" data-network="twitter" style="display: inline-block;">
+  <img alt="twitter sharing button" src="./Department of Statistics Malaysia_files/twitter.svg">
+  <span class="st-label"></span>
+</div><div class="st-btn st-hide-label st-remove-label" data-network="whatsapp" style="display: inline-block;">
+  <img alt="whatsapp sharing button" src="./Department of Statistics Malaysia_files/whatsapp.svg">
+  <span class="st-label"></span>
+</div><div class="st-btn st-last st-hide-label st-remove-label" data-network="telegram" style="display: none;">
+  <img alt="telegram sharing button" src="./Department of Statistics Malaysia_files/telegram.svg">
+  <span class="st-label"></span>
+</div></div><!-- ShareThis END -->
+                
+                <p style="color:grey; font-size:0.9em;margin-top:1em;">
+                    
+                </p>
+            </div>
+        </div>
+        <hr>
+  </div>
+</section>
+<section class="pt-50 pb-150" data-select2-id="select2-data-4-pi4s">
+    <div class="container">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+
+td, th {
+  border: none;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+    <div class="row" style="width: 100%">
+      <div class="col-lg-12">
+                <form method="post">
+                            <label>Categories</label>
+                            <select id="kategori" name="kategori" class="form-control select2 select2-hidden-accessible" required="" data-select2-id="select2-data-kategori" tabindex="-1" aria-hidden="true">
+                                <option data-select2-id="select2-data-2-o93g">--Please Choose Category--</option>
+                                <option value="1" data-select2-id="select2-data-7-7rar">National Accounts</option><option value="2" data-select2-id="select2-data-8-x5yx">Balance of Payments</option><option value="3" data-select2-id="select2-data-9-1gqw">External Trade</option><option value="4" data-select2-id="select2-data-10-z0zt">Consumer Price Index</option><option value="5" data-select2-id="select2-data-11-ogmp">Producer Price Index and Import &amp; Export Price Indices</option><option value="6" data-select2-id="select2-data-12-ldnv">External Trade Indices</option><option value="7" data-select2-id="select2-data-13-r3ut">Index of Industrial Production</option><option value="8" data-select2-id="select2-data-14-7nam">Paddy</option><option value="9" data-select2-id="select2-data-15-iywd">Rubber</option><option value="10" data-select2-id="select2-data-16-vrox">Oil Palm</option><option value="11" data-select2-id="select2-data-17-wxoa">Cocoa</option><option value="12" data-select2-id="select2-data-18-oy56">Forestry</option><option value="13" data-select2-id="select2-data-19-761h">Fisheries</option><option value="14" data-select2-id="select2-data-20-lzkz">Mining and Stone Quarrying</option><option value="15" data-select2-id="select2-data-21-li4d">Manufacturing</option><option value="16" data-select2-id="select2-data-22-hf0v">Electricity</option><option value="17" data-select2-id="select2-data-23-bm85">Construction</option><option value="18" data-select2-id="select2-data-24-r8cv">Services</option><option value="19" data-select2-id="select2-data-25-wcq5">Environment</option><option value="20" data-select2-id="select2-data-26-r9bn">Employment</option><option value="21" data-select2-id="select2-data-27-j6k0">Population</option><option value="22" data-select2-id="select2-data-28-teyp">Abbreviations &amp; Symbols</option><option value="23" data-select2-id="select2-data-29-ahns">Time Series Production of Selected Products 1963 - 2010</option><option value="24" data-select2-id="select2-data-30-vq8w">Principal statistics of the labour force, Malaysia/states, 1982 - 2024</option><option value="25" data-select2-id="select2-data-31-os7s">Principal statistics of the labour force by sex, Malaysia/states, 1982 - 2024</option><option value="26" data-select2-id="select2-data-32-jbfz">Principal statistics of the labour force by stratum, Malaysia/states, 1982 - 2024</option><option value="27" data-select2-id="select2-data-33-g8f4">Labour force by age group, Malaysia/states, 1982 - 2024</option><option value="28" data-select2-id="select2-data-34-7zyl">Labour force by ethnic group, Malaysia/states, 1982 - 2024</option><option value="29" data-select2-id="select2-data-35-9q7o">Labour force by educational attainment, Malaysia/states, 1982 - 2024</option><option value="30" data-select2-id="select2-data-36-p66v">Labour force by highest certificate obtained, Malaysia/states, 1982 - 2024</option><option value="31" data-select2-id="select2-data-37-aezb">Labour force by marital status, Malaysia/states, 1982 - 2024</option><option value="32" data-select2-id="select2-data-38-emxg">Employed persons by age group, Malaysia/states, 1982 - 2024</option><option value="33" data-select2-id="select2-data-39-njhx">Employed persons by ethnic group, Malaysia/states, 1982 - 2024</option><option value="34" data-select2-id="select2-data-40-s0al">Employed persons by occupation, Malaysia/states, 1982 - 2024</option><option value="35" data-select2-id="select2-data-41-tep9">Employed persons by industry, Malaysia/states, 1982 - 2024</option><option value="36" data-select2-id="select2-data-42-hnha">Employed persons by status in employment, Malaysia/states, 1982 - 2024</option><option value="37" data-select2-id="select2-data-43-ezks">Employed persons by educational attainment, Malaysia/states, 1982 - 2024</option><option value="38" data-select2-id="select2-data-44-ya7p">Employed persons by highest certificate obtained, Malaysia/states, 1982 - 2024</option><option value="39" data-select2-id="select2-data-45-r9w4">Employed persons by marital status, Malaysia/states, 1982 - 2024</option><option value="40" data-select2-id="select2-data-46-09ow">Technical Notes</option>
+                            </select><span class="select2 select2-container select2-container--default select2-container--above" dir="ltr" data-select2-id="select2-data-1-ndyy" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-kategori-container" aria-controls="select2-kategori-container"><span class="select2-selection__rendered" id="select2-kategori-container" role="textbox" aria-readonly="true" title="--Please Choose Category--">--Please Choose Category--</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    <br><br>
+                    <input class="btn btn-info" type="submit" name="submit" value="Search">
+                    <a href="https://www.dosm.gov.my/portal-main/time-series" class="btn btn-warning form-custom">&nbsp;&nbsp;Reset&nbsp;&nbsp;</a>
+                    
+                </form>
+        <br>
+          <div class="accordion gray plus-icon round mb-30">
+              
+                        <div class="acd-group acd-active">
+                          <a href="https://www.dosm.gov.my/portal-main/time-series#" class="acd-heading">Malaysia Economic Statistics - Time Series 2019</a>
+                          
+                          <div class="acd-des" style="">
+                         
+                          Last update: 24 Sep 2022.
+                          <br>
+                          <table>
+                              <tbody><tr style="background:#02536A; color:white;">
+                                <th>No.</th>
+                                <th>Categories</th>
+                                <th>Download</th>
+                              </tr>
+                            
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>Abbreviations &amp; Symbols</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210546.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>2.</td>
+                                            <td>Balance of Payments</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220903201145.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220903201146.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>3.</td>
+                                            <td>Cocoa</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210117.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210117.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>4.</td>
+                                            <td>Construction</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210357.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210357.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>5.</td>
+                                            <td>Consumer Price Index</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220907235910.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220907235910.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>6.</td>
+                                            <td>Electricity</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210332.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210332.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>7.</td>
+                                            <td>Employment</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210506.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210506.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>8.</td>
+                                            <td>Environment</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210444.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210444.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>9.</td>
+                                            <td>External Trade</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220907235726.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220907235726.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>10.</td>
+                                            <td>External Trade Indices</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924205811.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924205811.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>11.</td>
+                                            <td>Fisheries</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210217.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210217.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>12.</td>
+                                            <td>Forestry</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210145.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210145.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>13.</td>
+                                            <td>Index of Industrial Production</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924205853.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924205853.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>14.</td>
+                                            <td>Manufacturing</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210310.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210310.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>15.</td>
+                                            <td>Mining and Stone Quarrying</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210243.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210243.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>16.</td>
+                                            <td>National Accounts</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220903194328.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220903194328.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>17.</td>
+                                            <td>Oil Palm</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210050.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210050.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>18.</td>
+                                            <td>Paddy</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924205945.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924205945.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>19.</td>
+                                            <td>Population</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210527.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210527.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>20.</td>
+                                            <td>Producer Price Index and Import &amp; Export Price Indices</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924204816.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924204816.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>21.</td>
+                                            <td>Rubber</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210023.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210023.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>22.</td>
+                                            <td>Services</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220924210421.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20220924210421.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                            </tbody></table>
+                          </div>
+                        </div>
+                    
+                        <div class="acd-group">
+                          <a href="https://www.dosm.gov.my/portal-main/time-series#" class="acd-heading">Labour Force Survey (LFS) Time Series Statistics by State, 1982 - 2024</a>
+                          
+                          <div class="acd-des" style="display: none;">
+                         
+                          Last update: 22 Aug 2025.
+                          <br>
+                          <table>
+                              <tbody><tr style="background:#02536A; color:white;">
+                                <th>No.</th>
+                                <th>Categories</th>
+                                <th>Download</th>
+                              </tr>
+                            
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>Employed persons by age group, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115426.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115426.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>2.</td>
+                                            <td>Employed persons by educational attainment, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115851.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115851.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>3.</td>
+                                            <td>Employed persons by ethnic group, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115509.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115510.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>4.</td>
+                                            <td>Employed persons by highest certificate obtained, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115930.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115930.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>5.</td>
+                                            <td>Employed persons by industry, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115700.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115700.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>6.</td>
+                                            <td>Employed persons by marital status, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822120013.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822120013.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>7.</td>
+                                            <td>Employed persons by occupation, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115606.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115606.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>8.</td>
+                                            <td>Employed persons by status in employment, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115814.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115814.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>9.</td>
+                                            <td>Labour force by age group, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115056.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115056.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>10.</td>
+                                            <td>Labour force by educational attainment, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115203.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115203.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>11.</td>
+                                            <td>Labour force by ethnic group, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115135.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115135.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>12.</td>
+                                            <td>Labour force by highest certificate obtained, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115320.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115320.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>13.</td>
+                                            <td>Labour force by marital status, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115351.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115351.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>14.</td>
+                                            <td>Principal statistics of the labour force by sex, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822114952.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822114952.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>15.</td>
+                                            <td>Principal statistics of the labour force by stratum, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822115024.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822115024.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>16.</td>
+                                            <td>Principal statistics of the labour force, Malaysia/states, 1982 - 2024</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20250822114907.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_excel_20250822114907.xlsx" target="_blank"><img src="./Department of Statistics Malaysia_files/excel.png"></a>
+                                                            
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>17.</td>
+                                            <td>Technical Notes</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20241017172513.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                            </td>
+                                        </tr>
+                                    
+                            </tbody></table>
+                          </div>
+                        </div>
+                    
+                        <div class="acd-group">
+                          <a href="https://www.dosm.gov.my/portal-main/time-series#" class="acd-heading">Time Series Production of Selected Products 1963 - 2010</a>
+                          
+                          <div class="acd-des" style="display: none;">
+                         
+                          Last update: 07 Sep 2023.
+                          <br>
+                          <table>
+                              <tbody><tr style="background:#02536A; color:white;">
+                                <th>No.</th>
+                                <th>Categories</th>
+                                <th>Download</th>
+                              </tr>
+                            
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>Time Series Production of Selected Products 1963 - 2010</td>
+                                            <td>
+                                                    
+                                                                <a href="https://www.dosm.gov.my/admin/images/icon/contentdoc_pdf_20220903205309.pdf" target="_blank"><img src="./Department of Statistics Malaysia_files/pdf.png"></a>
+                                                            
+                                                    &nbsp;&nbsp;
+                                                    
+                                            </td>
+                                        </tr>
+                                    
+                            </tbody></table>
+                          </div>
+                        </div>
+                    
+          </div>
+       </div>
+   </div>
+   </div>
+</section>
+<section class="pt-150 pb-50" style="background: linear-gradient(4deg, rgba(216,228,232,1) 0%, rgba(216,228,232,1) 19%, rgba(255,255,255,0) 47%);">
+    <div class="container" style="padding:0;">
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-md-12" style="text-align:center;">
+                <h2 style="color:#498d90;text-shadow: 2px 2px 2px rgba(229, 230, 230, 1);margin:0;">Online Services</h2>
+                
+            </div>
+        </div>
+        <div class="owl-carousel pt-0 owl-loaded owl-drag" data-nav-dots="false" data-items="4" data-md-items="4" data-sm-items="4" data-xs-items="4" data-xx-items="4" data-space="0" data-nav-arrow="true">
+                    
+                    
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1707px, 0px, 0px); transition: 1s; width: 3131px;"><div class="owl-item cloned" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=9" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230324131021.png" alt="Interactive Visualisation" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Interactive Visualisation</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div><div class="owl-item cloned" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=6" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230222232020.png" alt="Dashboard" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Dashboard</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div><div class="owl-item cloned" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=8" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230324131009.png" alt="Data Portal" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Data Portal</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div><div class="owl-item cloned" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=9" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230324131021.png" alt="Interactive Visualisation" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Interactive Visualisation</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div><div class="owl-item" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=6" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230222232020.png" alt="Dashboard" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Dashboard</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div><div class="owl-item" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=8" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230324131009.png" alt="Data Portal" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Data Portal</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div><div class="owl-item active" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=9" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230324131021.png" alt="Interactive Visualisation" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Interactive Visualisation</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div><div class="owl-item cloned active" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=6" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230222232020.png" alt="Dashboard" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Dashboard</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div><div class="owl-item cloned active" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=8" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230324131009.png" alt="Data Portal" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Data Portal</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div><div class="owl-item cloned active" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=9" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230324131021.png" alt="Interactive Visualisation" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Interactive Visualisation</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div><div class="owl-item cloned" style="width: 284.55px;"><div class="item" style="padding-bottom:15px;padding-top:15px;padding-left:10px;padding-right:10px;">
+                    <div style="box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);padding:10px;background:#ffffff;border-radius:10px;">
+                        <a href="https://www.dosm.gov.my/portal-main/online-services?data=6" target="_blank">
+                            <center>
+                                <img src="./Department of Statistics Malaysia_files/onlineservices20230222232020.png" alt="Dashboard" style="max-width:50%;height:200px">
+                                <h6 style="font-size:0.9em;height:60px;margin:0;padding-top:1em;">Dashboard</h6>
+                            </center>
+                        </a>
+                    </div>
+                    </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"><i class="fa fa-angle-left fa-2x"></i></div><div class="owl-next"><i class="fa fa-angle-right fa-2x"></i></div></div><div class="owl-dots disabled"></div></div>
+    </div>
+</section>
+</div> <!-- from header -->
+
+<style>
+    .footer-useful-link ul li {
+        margin-bottom:5px;
+    }
+    #footer2 {
+       background: rgb(238,238,238);
+        background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(252,252,252,1) 100%);
+    }
+    .footer.black-bg {
+        background:url(/assets/dosm/images/footerbg.jpg) no-repeat;
+        background-size:cover;
+    }
+    .footer-useful-link ul li a:hover {
+        color: #ffffff;
+    }
+    #footer{
+        font-size:0.85em;
+    }
+</style>
+<div style="background-color:#d7e4e8;width:100%;margin:0;padding:0;">
+<div style="background: url(/assets/dosm/images/footerbg.png) no-repeat;background-size: cover;padding-top:150px;">
+    <div class="container pt-50 pb-20 text-white" id="footer">
+        <div class="row">
+            <div class="col-lg-2 col-md-6 col-sm-12 mb-20"><img src="./Department of Statistics Malaysia_files/qrcode.jpg" alt="QR" style="width:100%;"></div>
+            <div class="col-lg-3 col-md-6 col-sm-12  mb-20">
+            
+                <ul class="list list-unstyled">
+                  <li> <i class="fa fa-map-marker"></i> Department of Statistics Malaysia, <br>
+                        Block C6 &amp; C7, Complex C, <br>
+                        Federal Government Administrative Centre <br>
+                        62514 Precinct 1, <br>
+                        Wilayah Persekutuan Putrajaya </li>
+                  <li> <i class="fa fa-phone"></i> 03 8885 7000 </li>
+                  <li> <i class="fa fa-fax"></i> 03 8888 9248 </li>
+                  <li> 
+                        <i class="fa fa-envelope-o"></i> 
+                        info@dosm.gov.my (General Enquiries)<br>
+                        data@dosm.gov.my (Data Request &amp; Enquiries)
+                  </li>
+                  <li> <i class="fa fa-globe"></i> www.dosm.gov.my </li>
+              </ul>
+              
+              <!--
+              <ul class="list list-unstyled">
+                  <li> <i class="fa fa-check"></i> Easy to use great Fusion Builders </li>
+                  <li> <i class="fa fa-check"></i> We offer beautiful free support </li>
+                  <li> <i class="fa fa-check"></i> Awesome sliders give you amazing </li>
+                  <li> <i class="fa fa-check"></i> We offer free support for months </li>
+                  <li> <i class="fa fa-check"></i> Wonderful Icon Fonts </li>
+              </ul>
+              -->
+                
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-20">
+                <h6 class="text-white">DOSM's Agencies</h6><ul class="list list-unstyled"><li> 
+                            <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+                            <a href="https://www.ilmia.gov.my/index.php/en/" target="_blank" class="text-white">
+                                Institute for Labour Market Information and Analysis
+                            </a>
+                        </li><li> 
+                            <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+                            <a href="https://mbls.dosm.gov.my/mylmid/about.html" target="_blank" class="text-white">
+                                Malaysian Bureau of Labour Statistics
+                            </a>
+                        </li><li> 
+                            <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+                            <a href="https://ilsm.dosm.gov.my/" target="_blank" class="text-white">
+                                Malaysia Statistical Training Institute
+                            </a>
+                        </li></ul>
+                <h6 class="mt-4"><a href="https://www.dosm.gov.my/portal-main/links?cat=dosm_community" class="text-white">DOSM's Community</a></h6>
+                
+                
+            </div>
+            
+            <div class="col-lg-2 col-md-6 col-sm-12 mb-20">
+                <h6 class="text-white">Other Agencies</h6><ul class="list list-unstyled"><li> 
+                            <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+                            <a href="https://www.epu.gov.my/" target="_blank" class="text-white">
+                                Ministry of Economy
+                            </a>
+                        </li><li> 
+                            <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+                            <a href="https://www.malaysia.gov.my/portal/" target="_blank" class="text-white">
+                                MyGOV
+                            </a>
+                        </li><li> 
+                            <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+                            <a href="https://www.bnm.gov.my/" target="_blank" class="text-white">
+                                Central Bank of Malaysia
+                            </a>
+                        </li></ul>
+            </div>
+            
+            <div class="col-lg-2 col-md-6 col-sm-12 mb-20">
+                <h6 class="text-white" style="line-height:150%;">International Statistical Organisation &amp; Office </h6><ul class="list list-unstyled"><li> 
+                            <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+                            <a href="https://www.dosm.gov.my/portal-main/links2-list/statistics-world-wide/" class="text-white">
+                                Statistics World Wide
+                            </a>
+                        </li><li> 
+                            <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+                            <a href="https://www.dosm.gov.my/portal-main/links-list/international-statistical-organisation/" class="text-white">
+                                International Statistical Organisation
+                            </a>
+                        </li><li> 
+                            <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+                            <a href="https://www.dosm.gov.my/portal-main/links-list/other-related-links" class="text-white">
+                                Other Related Links
+                            </a>
+                        </li></ul>
+                <div style="width:100%;margin:0;padding:0;text-align:right;padding-top:20px;">
+                
+                <!--h6 class="text-white mt-4">Top Statistics Search </h6>
+                <p class="text-white p-0 m-0">Agriculture</p>
+                <p class="text-white p-0 m-0">External Sector</p> 
+                <p class="text-white p-0 m-0">Construction</p-->
+                
+                <!--h6 class="text-white mt-4">Subscribe & Follow</h6--><a href="https://www.facebook.com/StatsMalaysia" target="_blank">
+                                <img src="./Department of Statistics Malaysia_files/img_20250515141839.png" title="Facebook" style="height:20px;">
+                            </a>&nbsp;&nbsp;<a href="https://twitter.com/StatsMalaysia" target="_blank">
+                                <img src="./Department of Statistics Malaysia_files/img_20250515142021.png" title="X" style="height:20px;">
+                            </a>&nbsp;&nbsp;<a href="https://www.instagram.com/statsmalaysia/" target="_blank">
+                                <img src="./Department of Statistics Malaysia_files/img_20250515142043.png" title="Instagram" style="height:20px;">
+                            </a>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UC0CMa71i-wBYmz-HIZ8bOzQ" target="_blank">
+                                <img src="./Department of Statistics Malaysia_files/img_20250515142110.png" title="Youtube" style="height:20px;">
+                            </a>&nbsp;&nbsp;<a href="https://www.tiktok.com/@statsmalaysia" target="_blank">
+                                <img src="./Department of Statistics Malaysia_files/img_20250515142210.png" title="TikTok" style="height:20px;">
+                            </a>&nbsp;&nbsp;<a href="https://www.linkedin.com/company/statsmalaysia" target="_blank">
+                                <img src="./Department of Statistics Malaysia_files/img_20250515142310.png" title="Linkedin" style="height:20px;">
+                            </a>&nbsp;&nbsp;
+                </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+</div>
+
+<div style="background: linear-gradient(0deg, rgba(238,238,238,1) 0%, rgba(252,252,252,1) 100%);">
+    <div class="container" style="padding:1em; 0;">
+        <div class="row">
+            <div class="col-lg-9 col-md-12 col-sm-12">
+                <div style="padding-top:1em;">
+                    <a href="https://www.dosm.gov.my/portal-main/time-series#" class="black-color" style="padding-right:1em;">Disclaimer</a>
+                    <a href="https://www.dosm.gov.my/portal-main/time-series#" class="black-color" style="padding-right:1em;">Privacy Policy</a>
+                    <a href="https://www.dosm.gov.my/portal-main/time-series#" class="black-color" style="padding-right:1em;">Security Policy</a>
+                    <a href="https://www.dosm.gov.my/portal-main/time-series#" class="black-color" style="padding-right:1em;">Copyright</a>
+                    <a href="https://www.dosm.gov.my/portal-main/time-series#" class="black-color" style="padding-right:1em;">Sitemap</a>
+                    <a href="https://www.dosm.gov.my/portal-main/time-series#" class="black-color" style="padding-right:1em;">Feedback</a>
+                    <a href="https://www.dosm.gov.my/portal-main/time-series#" class="black-color" style="padding-right:1em;">Help</a>
+                    <a href="https://www.dosm.gov.my/portal-main/time-series#" class="black-color" style="padding-right:1em;">FAQs</a>
+                    <a href="https://www.dosm.gov.my/portal-main/time-series#" class="black-color">Archive</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12" style="text-align:center;">
+                Visitor <span class="theme-color"><b>1, 277, 083</b></span><br>
+                Last update : 03 March 2022
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+</div>
+
+<style>
+    #back-to-top .top {
+        background: #0d5d60;
+        border: 1px solid #fff;
+    }
+</style>
+
+<div id="back-to-top" style="display: none;"><a class="top arrow" href="https://www.dosm.gov.my/portal-main/time-series#top"><i class="fa fa-angle-up"></i> <span>TOP</span></a></div>
+
+<div class="modal fade" id="modalW3C" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body" style="padding:2em;text-align:center;">
+          <h4>Pilihan W3C</h4>
+          <p>Warna Teks</p>
+          <span class="w3ctext" id="redfont" style="color:red !important;border-color:red;">A</span>
+          <span class="w3ctext" id="bluefont" style="color:blue !important;border-color:blue;">A</span>
+          <span class="w3ctext" id="greenfont" style="color:green !important;border-color:green;">A</span>
+          <span class="w3ctext" id="blackfont">A</span>
+          <br>
+          <p>Saiz Teks</p>
+          <span class="w3ctext" id="incfont">A+</span>
+          <span class="w3ctext" id="resetfont">A</span>
+          <span class="w3ctext" id="decfont">A-</span>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./Department of Statistics Malaysia_files/plugins-jquery.js.download"></script>
+<script>var plugin_path = 'https://www.dosm.gov.my/assets/portal/js/';</script>
+<script src="./Department of Statistics Malaysia_files/jquery.themepunch.tools.min.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/jquery.themepunch.revolution.min.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/revolution-custom.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/custom.js.download"></script>
+
+<script src="./Department of Statistics Malaysia_files/greensock.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/layerslider.transitions.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/layerslider.kreaturamedia.jquery.js.download"></script>
+
+<script src="./Department of Statistics Malaysia_files/fullcalendar.min.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/moment.min.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/sweetalert.min.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/select2.min.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/jquery.bootstrap-duallistbox.js.download"></script>
+<script src="./Department of Statistics Malaysia_files/bootstrap.bundle.min.js.download"></script>
+    
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.marquee').marquee({
+        duration: 20000,
+        gap: 50,
+        delayBeforeStart: 0,
+        direction: 'left',
+        pauseOnHover: true,
+    });
+
+        /*$("a[data-bs-toggle="tab"]").on("shown.bs.tab", function(e){
+            var activeTab = $(e.target).text();
+            var previousTab = $(e.relatedTarget).text();
+            $(".active-tab span").html(activeTab);
+            $(".previous-tab span").html(previousTab);
+        });*/
+        
+        
+        $("#slider").layerSlider({
+			sliderVersion: "6.0.0",
+			responsiveUnder: 0,
+			layersContainer: 0,
+			slideBGSize: "auto",
+			skin: "borderlessdark3d",
+			globalBGColor: "transparent",
+			hoverBottomNav: true,
+			yourLogoStyle: "left: 10px; top: 10px;",
+			skinsPath: "https://www.dosm.gov.my/assets/layerslider/skins/"
+		});
+		/*$("#slider").layerSlider({
+			sliderVersion: "6.0.0",
+			responsiveUnder: 0,
+			layersContainer: 0,
+			slideBGSize: "auto",
+			skin: "borderlessdark3d",
+			globalBGColor: "transparent",
+			hoverBottomNav: true,
+			yourLogoStyle: "left: 10px; top: 10px;",
+			skinsPath: "https://www.dosm.gov.my/assets/layerslider/skins/"
+		});*/
+	});
+</script>
+<script>$('.select2').select2({ width: '100%' });
+
+$(".duallistbox").bootstrapDualListbox();
+
+$("#redfont").click(function () {
+    $('body,p,a,div,ul,li,h1,h2,h3,h4,h5,h6,.text-white,i,span, button, select, table, tr, td, tbody, th, thead, div, .mega-menu .menu-links > li > a').css('color', 'red');
+    $('#modalW3C').modal('hide');
+});
+
+$("#bluefont").click(function () {
+    $('body,p,a,div,ul,li,h1,h2,h3,h4,h5,h6,.text-white,i,span, button, select, table, tr, td, tbody, th, thead, div, .mega-menu .menu-links > li > a').css('color', 'blue');
+    $('#modalW3C').modal('hide');
+});
+
+$("#greenfont").click(function () {
+    $('body,p,a,div,ul,li,h1,h2,h3,h4,h5,h6,.text-white,i,span, button, select, table, tr, td, tbody, th, thead, div, .mega-menu .menu-links > li > a').css('color', 'green');
+    $('#modalW3C').modal('hide');
+});
+
+$("#blackfont").click(function () {
+    $('body,p,a,div,ul,li,h1,h2,h3,h4,h5,h6,.text-white,i,span, button, select, table, tr, td, tbody, th, thead, div, .mega-menu .menu-links > li > a').css('color', 'black');
+    $('#modalW3C').modal('hide');
+});
+
+$('#incfont').click(function () {
+    curSize = parseInt($('body').css('font-size')) + 2;
+    $('body,p,a,div,ul,li,h1,h2,h3,h4,h5,h6,.text-white,i,span, button, select').css('font-size', curSize);
+    $('#modalW3C').modal('hide');
+});
+
+$('#decfont').click(function () {
+    curSize = parseInt($('body').css('font-size')) - 2;
+    $('body,p,a,div,ul,li,h1,h2,h3,h4,h5,h6,.text-white,i,span, button, select').css('font-size', curSize);
+    $('#modalW3C').modal('hide');
+});
+
+$('#resetfont').click(function () {
+    //$('body,p,a,div,ul,li,h1,h2,h3,h4,h5,h6,.text-white,i').css('font-size', '');
+    location.reload();
+});</script></div><script type="text/javascript" src="./Department of Statistics Malaysia_files/mega_menu.js.download"></script><script type="text/javascript" src="./Department of Statistics Malaysia_files/owl-carousel.min.js.download"></script><script type="text/javascript" src="./Department of Statistics Malaysia_files/jquery.nicescroll.js.download"></script><script type="text/javascript" src="./Department of Statistics Malaysia_files/isotope.pkgd.min.js.download"></script><div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 5px; z-index: 9; cursor: default; position: fixed; top: 0px; left: -5px; height: 585.333px; display: none;"><div class="nicescroll-cursors" style="position: relative; top: 0px; float: right; width: 5px; height: 0px; background-color: rgba(0, 0, 0, 0.1); border: 0px; background-clip: padding-box; border-radius: 0px;"></div></div></body></html>
