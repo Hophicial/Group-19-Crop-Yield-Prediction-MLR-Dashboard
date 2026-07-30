@@ -551,9 +551,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 7. RENDER CORRELATION MATRIX GRID
     const matrixLabels = ["Planted Area", "Rice Prod.", "Avg Yield"];
     const corrValues = [
-        [1.000000, 0.358832, 0.231636],
-        [0.358832, 1.000000, 0.990732],
-        [0.231636, 0.990732, 1.000000]
+        [1.000000, 0.990100, 0.965900],
+        [0.990100, 1.000000, 0.967800],
+        [0.965900, 0.967800, 1.000000]
     ];
     
     const heatmapBox = document.getElementById('correlationHeatmap');
